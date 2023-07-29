@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/comma.js?v=1"></script>
+</head>
+<body>
+    <input type="text" class="form-control" id="txtPayment" onkeyup="moneyCommaSep(this)" />
+
+    <button onclick="X()">txt value</button>
+</body>
+<script>
+
+    function X() {
+        var a = removeComma($("#txtPayment").val())
+        alert(a);
+    }
+   
+</script>
+</html>
